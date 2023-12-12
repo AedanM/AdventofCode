@@ -1,0 +1,15 @@
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\bin\Debug\net8.0\Day7.exe
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\bin\Debug\net8.0\Day7.deps.json
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\bin\Debug\net8.0\Day7.runtimeconfig.json
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\bin\Debug\net8.0\Day7.dll
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\bin\Debug\net8.0\Day7.pdb
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.GeneratedMSBuildEditorConfig.editorconfig
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.AssemblyInfoInputs.cache
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.AssemblyInfo.cs
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.csproj.CoreCompileInputs.cache
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.sourcelink.json
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.dll
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\refint\Day7.dll
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.pdb
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\Day7.genruntimeconfig.cache
+C:\mysources\aoc23\Aedan\Day 7\Day7\Day7\obj\Debug\net8.0\ref\Day7.dll
