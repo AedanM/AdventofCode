@@ -8,7 +8,7 @@ def main(filePath):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog="AOC DayXXX")
+    parser = argparse.ArgumentParser(prog="AOC Day6")
     parser.add_argument("-f", "--file", required="True")
     args = parser.parse_args()
     main(args.file)
