@@ -4,9 +4,7 @@ import argparse
 class Card:
     def __init__(self, CardLine, cardsWon):
         self.num = CardLine.split(":")[0][-1]
-        self.winningNums = [
-            int(x) for x in CardLine.split("|")[0].split(":")[1].split(" ") if x
-        ]
+        self.winningNums = [int(x) for x in CardLine.split("|")[0].split(":")[1].split(" ") if x]
         self.userNums = [int(x) for x in CardLine.split("|")[1].split(" ") if x]
         self.winMul = 0
         self.matches = 0
@@ -39,7 +37,7 @@ def main(filePath):
         for idx, line in enumerate(fileTxt):
             newCard = Card(line, cardArray[idx])
             winMul = newCard.calcMatchesAndPoints()
-            cardArray.append(newCard)
+            cardArray.append(newCard)  # type:ignore
             score += winMul
             if newCard.matches:
                 for i in range(1, newCard.matches + 1):
@@ -52,6 +50,6 @@ def main(filePath):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="AOC Day4")
-    parser.add_argument("-f", "--file", required="True")
+    parser.add_argument("-f", "--file", required=True)
     args = parser.parse_args()
     main(args.file)

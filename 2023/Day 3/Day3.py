@@ -65,12 +65,7 @@ def main(filePath):
             Ytouching = withinOne(num.startingY, gear.startingY) or withinOne(
                 num.endingY, gear.startingY
             )
-            if (
-                Xtouching
-                and Ytouching
-                and not num.used
-                and (int(num.value) not in usedList)
-            ):
+            if Xtouching and Ytouching and not num.used and (int(num.value) not in usedList):
                 num.used = True
                 print(f"Number {num.value} ({num.startCoord})used here")
                 usedList.append(int(num.value))
@@ -80,6 +75,6 @@ def main(filePath):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="AOC Day2")
-    parser.add_argument("-f", "--file", required="True")
+    parser.add_argument("-f", "--file", required=True)
     args = parser.parse_args()
     main(args.file)

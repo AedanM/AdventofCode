@@ -77,6 +77,6 @@ def main(filePath):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="AOC Day1")
-    parser.add_argument("-f", "--file", required="True")
+    parser.add_argument("-f", "--file", required=True)
     args = parser.parse_args()
     main(args.file)

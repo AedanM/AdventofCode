@@ -5,9 +5,7 @@ def createMap(mapTomap, line):
     lineList = line.strip().split(" ")
     lineList = [int(i) for i in lineList]
 
-    mapTomap.append(
-        (lineList[1], lineList[1] + lineList[2], (-lineList[1] + lineList[0]))
-    )
+    mapTomap.append((lineList[1], lineList[1] + lineList[2], (-lineList[1] + lineList[0])))
 
 
 def checkMap(inputList, mapList):
@@ -151,7 +149,7 @@ def pt1(filePath):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="AOC Day5")
-    parser.add_argument("-f", "--file", required="True")
+    parser.add_argument("-f", "--file", required=True)
     args = parser.parse_args()
     pt1(args.file)
     pt2(args.file)
