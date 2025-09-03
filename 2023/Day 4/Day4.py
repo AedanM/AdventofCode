@@ -2,7 +2,7 @@ import argparse
 
 
 class Card:
-    def __init__(self, CardLine, cardsWon):
+    def __init__(self, CardLine: str, cardsWon: int) -> None:
         self.num = CardLine.split(":")[0][-1]
         self.winningNums = [int(x) for x in CardLine.split("|")[0].split(":")[1].split(" ") if x]
         self.userNums = [int(x) for x in CardLine.split("|")[1].split(" ") if x]
@@ -10,7 +10,7 @@ class Card:
         self.matches = 0
         self.cardsWon = cardsWon
 
-    def calcMatchesAndPoints(self):
+    def calcMatchesAndPoints(self) -> int:
         winMul = 0
         matches = 0
         for num in self.winningNums:
@@ -29,15 +29,15 @@ class Card:
 
 
 def main(filePath):
-    with open(filePath, "r") as fp:
+    with open(filePath) as fp:
         score = 0
-        fileTxt = [x for x in fp]
+        fileTxt = list(fp)
         cardArray = [1] * len(fileTxt)
         totalCards = 0
         for idx, line in enumerate(fileTxt):
             newCard = Card(line, cardArray[idx])
             winMul = newCard.calcMatchesAndPoints()
-            cardArray.append(newCard)  # type:ignore
+            cardArray.append(newCard)  # pyright: ignore[reportArgumentType]
             score += winMul
             if newCard.matches:
                 for i in range(1, newCard.matches + 1):
