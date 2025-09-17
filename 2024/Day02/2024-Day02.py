@@ -5,7 +5,7 @@ from pathlib import Path
 def Main(path: Path):
     p1Count = 0
     p2Count = 0
-    for line in path.read_text().split("\n"):
+    for line in path.read_text().splitlines():
         elList = [int(x) for x in line.split(" ")]
         safe = CheckIfSafe(elList)
         p1Count += 1 if safe else 0

@@ -12,7 +12,7 @@ def Main(path: Path):
 def ReadList(path) -> tuple[list[int], list[int]]:
     l1: list[int] = []
     l2: list[int] = []
-    for line in path.read_text().split("\n"):
+    for line in path.read_text().splitlines():
         val1, val2 = [x.strip() for x in line.split("   ")]
         l1.append(int(val1))
         l2.append(int(val2))
