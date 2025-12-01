@@ -1,5 +1,0 @@
-turn on 1,3 through 4,3
-turn on 1,3 through 4,3
-turn on 1,3 through 4,3
-turn off 1,3 through 4,3
-toggle 1,3 through 4,3
